@@ -2,6 +2,8 @@
  * Public API Surface of geialogger
  */
 
-export * from './lib/geialogger.service';
-export * from './lib/log-format.model';
-export * from './lib/log.model';
+export { GeialoggerService } from './lib/geialogger.service';
+export { LogFormat } from './lib/log-format.model';
+export { LogModel } from './lib/log.model';
+
+
