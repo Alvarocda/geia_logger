@@ -1,6 +1,6 @@
 {
   "name": "geialogger",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "peerDependencies": {
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0"
@@ -9,7 +9,6 @@
     "tslib": "^2.3.0",
     "ngx-capture": "^0.13.0"
   },
-  "sideEffects": false,
   "author": {
     "email": "alvarocda@gmail.com",
     "name": "Alvaro Claro",

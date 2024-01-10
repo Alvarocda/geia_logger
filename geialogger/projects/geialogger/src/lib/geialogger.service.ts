@@ -1,4 +1,4 @@
-import { Injectable, SecurityContext } from '@angular/core';
+import { Injectable, InjectionToken, SecurityContext } from '@angular/core';
 import { NgxCaptureService} from 'ngx-capture'
 import { LogModel } from './log.model';
 import { LogFormat } from './log-format.model';
@@ -7,9 +7,13 @@ import { DomSanitizer } from '@angular/platform-browser'
 @Injectable({
     providedIn: 'root'
 })
+
+
 export class GeialoggerService {
 
-    private  logs: LogModel[] = [];
+    
+
+    private logs: LogModel[] = [];
     private originalLog = console.log;
     private originalError = console.error;
     private originalWarn = console.warn;
