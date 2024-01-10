@@ -3,4 +3,5 @@
  */
 
 export * from './lib/geialogger.service';
-export * from './lib/geialogger.component';
+export * from './lib/log-format.model';
+export * from './lib/log.model';

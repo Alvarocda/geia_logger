@@ -8,5 +8,20 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "author": {
+    "email": "alvarocda@gmail.com",
+    "name": "Alvaro Claro",
+    "url": "https://github.com/Alvarocda"
+  },
+  "bugs": {
+    "url": "https://github.com/Alvarocda/geia_logger/issues"
+  },
+  "categories": [
+    "Debuggers",
+    "Visualization"
+  ],
+  "description": "Library that aims to make viewing application logs in production easier.",
+  "displayName": "Geia Logger",
+  "license": "MIT"
 }
