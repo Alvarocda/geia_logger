@@ -73,7 +73,16 @@ export class GeialoggerService {
         return logModel;
     }
 
-    prepareLog() {
+    prepareLogWithoutPrintScreen(){
+        const logFormat = {} as LogFormat;
+        const agoraMiliseconds = Date.now();
+        const filename = `${agoraMiliseconds}_console_logs.json`;
+        logFormat.logs = this.logs;
+        const fileUrl = this.createLogFile(logFormat, filename);
+        this.downloadLogFile(fileUrl, filename);
+    }
+
+    prepareLogWithPrintscreen() {
         const logFormat = {} as LogFormat;
         const agoraMiliseconds = Date.now();
         const filename = `${agoraMiliseconds}_console_logs.json`;
