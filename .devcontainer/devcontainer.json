@@ -12,7 +12,7 @@
 			"installOhMyZshConfig": true,
 			"upgradePackages": true,
 			"nonFreePackages": true,
-			"username": "automatic",
+			"username": "devcontainer",
 			"userUid": "automatic",
 			"userGid": "automatic"
 		},
@@ -26,7 +26,7 @@
 			"version": "os-provided"
 		},
 		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {
-			"version": "latest"
+			"version": "16"
 		}
 	}
 
