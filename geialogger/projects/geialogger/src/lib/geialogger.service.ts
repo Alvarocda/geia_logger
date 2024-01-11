@@ -9,10 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser'
 })
 
 
-export class GeialoggerService {
-
-    
-
+export class GeiaLoggerService {
     private logs: LogModel[] = [];
     private originalLog = console.log;
     private originalError = console.error;
@@ -57,6 +54,7 @@ export class GeialoggerService {
         if (this.logs.length > 150) {
             this.logs = this.logs.splice(-150);
         }
+        
     }
 
 
@@ -69,9 +67,10 @@ export class GeialoggerService {
             tipo: tipo,
             time: new Date(),
         };
-
         return logModel;
     }
+
+    
 
     prepareLogWithoutPrintScreen(){
         const logFormat = {} as LogFormat;
